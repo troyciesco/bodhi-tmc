@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-sans bg-accent text-dark;
+}
+
+.display {
+    @apply text-[8rem] font-bold leading-none;
+}
+
+.detail {
+    @apply text-xs font-bold leading-none;
+}
+
+.heading {
+    &-2xl {
+        @apply text-7xl font-bold leading-[72px];
+    }
+    &-xl {
+        @apply text-5xl font-bold leading-none;
+    }
+    &-lg {
+        @apply text-[2rem] font-bold leading-none;
+    }
+    &-md {
+        @apply text-xl font-bold leading-none;
+    }
+    &-sm {
+        @apply text-lg font-bold leading-none;
+    }
+    &-xs {
+        @apply text-base font-bold leading-none;
+    }
+}
+
+.body {
+    &-xl {
+        @apply text-2xl leading-[140%];
+    }
+    &-lg {
+        @apply text-xl leading-[140%];
+    }
+    &-md {
+        @apply text-lg leading-[140%];
+    }
+    &-sm {
+        @apply text-base leading-[140%];
+    }
+}
+
+.gradient {
+    &-golden-sea {
+        @apply from-sea to-golden-hour;
+    }
+    &-sea {
+        @apply from-sea to-deep-sea;
+    }
+    &-sand {
+        @apply from-sand to-wet-sand;
+    }
+}
